@@ -1,10 +1,7 @@
-<!-- <% provide(:title, "About") %> -->
-<!DOCTYPE html>
-<html>
-<body>
+<% provide(:title, "About") %>
+
 <h1>About</h1>
-<p>
-  <%= @json =%>
+
+<p class="about">
+  <%= @json['body']['storage']['value'].html_safe %>
 </p>
-<body>
-</html>

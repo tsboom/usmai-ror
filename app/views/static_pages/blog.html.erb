@@ -1,0 +1,16 @@
+<% provide(:title, "Blog") %>
+
+<h1>Blog</h1>
+<p>
+  <% @json['results'].each do |blog| %>
+  <div class="blogpost">
+    <div class="blogtitle">
+    <h3> <a href="http://usmai-confluence-sandbox.lib.umd.edu/confluence<%= blog['_links']['tinyui']%>"><%= blog['title'] %></a></h3>
+    <h6>by <%= blog['history']['createdBy']['displayName'] %> on <%= Date.parse(blog['history']['createdDate']).strftime("%B %d, %Y") %></h6>
+  </div>
+    <p class="blogcontent">
+      <%= blog['body']['storage']['value'].html_safe %>
+    </p>
+  </div>
+  <% end %>
+</p>
