@@ -11,5 +11,12 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require popper
 //= require turbolinks
+//= require jquery
+//= require jquery_ujs
 //= require_tree .
+//= require bootstrap-sprockets
+
+
+$('.carousel').carousel()

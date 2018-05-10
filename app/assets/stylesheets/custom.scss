@@ -1,10 +1,9 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
 
 /* universal */
 
 body {
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
 section {
@@ -23,6 +22,11 @@ textarea {
   margin-bottom: 10px;
 }
 
+.container {
+  padding-top: 100px;
+  padding-bottom:50px;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
+  margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -52,11 +57,15 @@ p {
 
 /* header */
 
+.jumbotron {
+  margin-top:40px;
+}
+
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -73,7 +82,7 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
+  // border-top: 1px solid #eaeaea; 
   color: #777;
 }
 
@@ -97,13 +106,4 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
-}
-
-/* blog */
-.blogpost {
-  margin-top: 40px;
-  margin-bottom: 60px;
-}
-.blogtitle {
-  margin-bottom: 20px;
 }

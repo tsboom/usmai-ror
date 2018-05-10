@@ -1,12 +1,53 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "USMAI", '#', id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   '#' %></li>
-        <li><%= link_to "Help",   '#' %></li>
-        <li><%= link_to "Log in", '#' %></li>
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" id="logo">USMAI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/about">About Us</a>
+            <a class="dropdown-item" href="/about/mission">Mission and Strategic Plan</a>
+            <a class="dropdown-item" href="/about/governance">Governance</a>
+          </div>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
       </ul>
-    </nav>
-  </div>
+      <form id="signin" class="navbar-form navbar-right" role="form">
+        
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="glyphicon glyphicon-user"></i>
+          </span>
+          <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
+
+          <span class="input-group-addon">
+            <i class="glyphicon glyphicon-lock"></i>
+          </span>
+          <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+
+        
+      </form>
+    </div>
+
+  </nav>
+
 </header>

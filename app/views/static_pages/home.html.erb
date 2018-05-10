@@ -1,13 +1,51 @@
-<div class="center jumbotron">
-  <h1>USMAI</h1>
 
-  <h2>
-    This is the home page for the University System of Maryland & Affiliated Institutions.
-
-  </h2>
-
-  <%= link_to "USMAI Workspace", 'http://usmai-confluence-sandbox.lib.umd.edu/confluence', class: "btn btn-lg btn-primary" %>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="<%= asset_path('books.jpg') %>" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>USMAI</h5>
+        <p>We provide unified, cost effective and creative approaches to acquiring, managing, and sharing information and knowledge resources.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="<%= asset_path('library.jpeg') %>" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Featured Content Title</h5>
+        <p>Cool description</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="<%= asset_path('stacks.jpeg') %>" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Announcement! (link to announcement)</h5>
+        <p>Cool description</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
-<%= link_to image_tag("http://usmai.org/sites/public/themes/zen_lib_usmai_public/logo.png", alt: "USMAI"),
-            'http://usmai.org/' %>
+<div class="center jumbotron">
+  <h1><%= link_to image_tag("http://usmai.org/sites/public/themes/zen_lib_usmai_public/logo.png", alt: "USMAI"), 'http://usmai.org/' %>
+</h1>
+
+  <h2>
+    This is the home page for the University System of Maryland & Affiliated Institutions.<br>
+    See more of what's going on within USMAI in our member workspace. 
+  </h2>
+
+  <%= link_to "USMAI Member Workspace", 'http://usmai-confluence-sandbox.lib.umd.edu/confluence', class: "btn btn-lg btn-primary" %>
+</div>

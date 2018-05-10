@@ -1,6 +1,6 @@
 <% provide(:title, "Contact") %>
 
 <h1>Contact</h1>
-<p>
-  <%= @json =%>
+<p class="contact">
+  <%= @json['body']['view']['value'].html_safe %>
 </p>
