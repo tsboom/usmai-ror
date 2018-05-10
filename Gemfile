@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 # Use Puma as the app server
@@ -13,7 +14,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0'
 gem 'popper_js', '~> 1.11', '>= 1.11.1'
-
+gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
